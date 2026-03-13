@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SCRIBE — Neural Interface</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -245,7 +245,7 @@
       return;
     }
 
-    const CHARS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const CHARS = 'אבגדהוזחטיכלמנסעפצקרשתךםןףץ';
     const FONT_SIZE = 16;
     const TRAIL_LENGTH = 20;
 
@@ -283,7 +283,7 @@
 
       ctx.fillStyle = '#000';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.font = `${FONT_SIZE}px 'Share Tech Mono', monospace`;
+      ctx.font = `${FONT_SIZE}px 'Frank Ruhl Libre', serif`;
 
       for (let i = 0; i < columns.length; i++) {
         const col = columns[i];
